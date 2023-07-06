@@ -1,0 +1,142 @@
+Q1: Whats's Box Model in CSS?
+
+Ans:Box Model defines the properites and dimensions of an element's
+    rectangular box, including it's content,padding,border and margin.
+     
+    Box Model has four main coponents.
+    1.content
+    2.Padding 
+    3.border
+    4.margin
+    
+    The total witdth and height of an element are calculated by summing
+    the content width/height,padding,and border. The margin is additional
+    space outside the element.
+
+    The box model enables developers to control the spacing,layout and
+    apperance of elements on a web page.By adjusting the values of padding,
+    border, and margin,you can create various designs and control the spacing 
+    beteween elements.
+
+Q2:What are the Different Types of Selectors in CSS & what are the advantages
+   of them?
+  Ans:There are five ypes of selector in css:
+      1.Simple Selector:selects the elemnts base on tagname,id and class and 
+        it also includes universal selector.
+      2.Combinator Selector:Selects the elements based on the specific relationship:
+        there are four types of combinators selectors:
+        1.Descendent Selector (div p) having space between selects based on the Descendent
+          of the selected elements.
+        2.child selector:(>) having > symbol and select all the child.
+        3.Adjecent sibling Selector:(+) select the imediate after sibling.
+        4.General sibling Selector:(~) select all the sibling of the targetd
+          element.
+     3.Pseudo class selector:allow to style the elements based on the state 
+       and there are various types of pseudo selectors :hover,:link,:active
+       etc.
+     4.Pseudo element selector:stle the selected elements there are various 
+       Pseudo elements selectors ::after,::befor,::firt-line,first::letter
+       etc
+    5.Attibute Selector:select and style the elements based on it's attibutes.
+
+Q3:What is VW/VH?
+   Ans:VW and VH are units of measurement in CSS that represents a percentage of 
+       viewport width.
+       
+       1,VW(viewport width)1 VW is equal to 1% of the width of the viewport.The 
+        
+       2.VH(viewport height)1 VH is equal to 1% of the height of the viewport.It 
+         represent a percentage of the visible height of the browser.
+      We can create responsive and relative layout based on the size of the viewport
+      These units are particularly useful for designing web pages that adept well to 
+      screen sizes and devices.
+
+Q4:What is difference between inline,inline Block and block?
+   Ans:Inline:elements those are inline will take space as per its content it will not 
+              take entire space of viewport.example img,span,li etc
+       
+       Inline Block:It is a css property that converts inline element to block level element.
+
+       Block:block element take the entire space of the viewport.example div,p etc.
+
+
+Q5:How is border-box different from Content Box?
+   Ans:The key difference between the border box and contain box lies in how the total
+       dimensions of an element are calculated:
+
+       *'content-box' calculated the total width and height as:width+padding+border+margin.
+       *'border-box' calculated the total width and height as:width(including padding and 
+         border)+margin.
+
+Q6:What is Z-index and How does it Function?
+   
+   Ans:'z-index' in a CSS property used to control the stacking order of elements along the Z-axix
+   (depth) on a web page.It determines which elements apear in front of or behind other elements 
+   apear in front of or behind other elements.Elements with higer 'z-index' values are positioned in 
+   front of elements with lower 'z-index; values within their stacking context.It creates a three-dimensional
+   stacking order,where elements with higher 'z-index' values are visually layered on top of elements wilt
+   lower values.
+
+Q7:What is Grid and Flex and difference between them?
+
+   Ans:Flexbox is best for one-dimensional layout with a flexible flow of items alona a single axis,while
+       Grid is suitable for two-dimensional layouts with more control over rows and columns.Depending on 
+       the requirement of your layout,you can choose between Flexbox and Grid,or even combine them to create
+       sophisticated and responsive designs.
+
+Q8Difference between absolute and relative and sticky and fixed position explain with example.
+
+Ans: Fixed:Elements with position:fixed are position relative to the viewport (browser 
+                     window) and do not move when the page is scrolled.
+                     
+                     Example:
+                                    HTML
+                 <div id=”fixed”>
+                                         <h1>I am fixed</h1>
+                   </div>
+                                  CSS
+     #fixed{
+                    position:fixed;
+                    left:56px;
+                    right:45px;
+                                       }
+Sticky:Elements with position:sticky are positioned based on the user’s scroll position.
+               They behave like ‘relative’ positioning until a specified threshold is met,at which
+               They stick to specific position.
+                          
+                    HTML
+          <div class=”sticky”>
+            <p> This is my sticky position</p>
+         </div>
+                   CSS
+ .sticky{
+postion:sticky ;
+Bottom:25px;
+}
+
+Relative: Elements with postion:reltaive are positioned relative to their normal postion
+                   In the document flow.
+                
+                      Example:
+                                    HTML
+             <div class=”relative”>
+                <h3>I am Relative</h3>
+             </div>
+                                   CSS
+.relative{
+position:relative;
+top:20px;
+left:20px;
+                 
+}
+               
+Absolute:Elements those are absolute are positioned relative to their closet positioned ancestor or the initial containing block if no positioned ancestor is found.
+
+Example:   HTML
+    <div class=”absolute”>
+            <div class=”parent”>
+            <div class=”child”>
+                  I am a static positioned
+             </div>
+             </div>
+             </div>

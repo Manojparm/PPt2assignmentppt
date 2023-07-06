@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+tr td{
+    border:1px solid black;
+    padding:10px;
+ 
+
+}
+table{
+    margin:20px auto;
+    
+    
+}
+.pink{
+    background-color: pink;
+}
+.yellow{
+    background-color: yellow;
+}
+.skyblue{
+    background-color: skyblue;
+}
+.green{
+    background-color: green;
+}
